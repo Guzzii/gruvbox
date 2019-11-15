@@ -514,19 +514,28 @@ call s:HL('GruvboxBg3', s:gb.bg3)
 call s:HL('GruvboxBg4', s:gb.bg4)
 
 call s:HL('GruvboxRed', s:gb.red)
-call s:HL('GruvboxRedBold', s:gb.red, s:none, s:bold)
 call s:HL('GruvboxGreen', s:gb.green)
-call s:HL('GruvboxGreenBold', s:gb.green, s:none, s:bold)
 call s:HL('GruvboxYellow', s:gb.yellow)
-call s:HL('GruvboxYellowBold', s:gb.yellow, s:none, s:bold)
 call s:HL('GruvboxBlue', s:gb.blue)
-call s:HL('GruvboxBlueBold', s:gb.blue, s:none, s:bold)
 call s:HL('GruvboxPurple', s:gb.purple)
-call s:HL('GruvboxPurpleBold', s:gb.purple, s:none, s:bold)
 call s:HL('GruvboxAqua', s:gb.aqua)
-call s:HL('GruvboxAquaBold', s:gb.aqua, s:none, s:bold)
 call s:HL('GruvboxOrange', s:gb.orange)
+
+call s:HL('GruvboxRedBold', s:gb.red, s:none, s:bold)
+call s:HL('GruvboxGreenBold', s:gb.green, s:none, s:bold)
+call s:HL('GruvboxYellowBold', s:gb.yellow, s:none, s:bold)
+call s:HL('GruvboxBlueBold', s:gb.blue, s:none, s:bold)
+call s:HL('GruvboxPurpleBold', s:gb.purple, s:none, s:bold)
+call s:HL('GruvboxAquaBold', s:gb.aqua, s:none, s:bold)
 call s:HL('GruvboxOrangeBold', s:gb.orange, s:none, s:bold)
+
+call s:HL('GruvboxRedItalic', s:gb.red, s:none, s:italic)
+call s:HL('GruvboxGreenItalic', s:gb.green, s:none, s:italic)
+call s:HL('GruvboxYellowItalic', s:gb.yellow, s:none, s:italic)
+call s:HL('GruvboxBlueItalic', s:gb.blue, s:none, s:italic)
+call s:HL('GruvboxPurpleItalic', s:gb.purple, s:none, s:italic)
+call s:HL('GruvboxAquaItalic', s:gb.aqua, s:none, s:italic)
+call s:HL('GruvboxOrangeItalic', s:gb.orange, s:none, s:italic)
 
 call s:HL('GruvboxRedSign', s:gb.red, s:sign_column, s:invert_signs)
 call s:HL('GruvboxGreenSign', s:gb.green, s:sign_column, s:invert_signs)
@@ -1123,23 +1132,36 @@ hi! link cStructure GruvboxOrange
 " }}}
 " Python: {{{
 
-hi! link pythonBuiltin GruvboxOrange
-hi! link pythonBuiltinObj GruvboxOrange
-hi! link pythonBuiltinFunc GruvboxOrange
-hi! link pythonFunction GruvboxAqua
-hi! link pythonDecorator GruvboxRed
-hi! link pythonInclude GruvboxBlue
-hi! link pythonImport GruvboxBlue
+hi! link pythonBuiltin GruvboxYellow
+hi! link pythonBuiltinObj GruvboxYellow
+hi! link pythonBuiltinFunc GruvboxYellow
+
 hi! link pythonRun GruvboxBlue
-hi! link pythonCoding GruvboxBlue
-hi! link pythonOperator GruvboxRed
-hi! link pythonException GruvboxRed
-hi! link pythonExceptions GruvboxPurple
-hi! link pythonBoolean GruvboxPurple
-hi! link pythonDot GruvboxFg3
 hi! link pythonConditional GruvboxRed
 hi! link pythonRepeat GruvboxRed
-hi! link pythonDottedName GruvboxGreenBold
+hi! link pythonStatement GruvboxRed
+
+hi! link pythonCoding GruvboxBlue
+hi! link pythonOperator GruvboxRed
+hi! link pythonBoolean GruvboxPurple
+hi! link pythonDot GruvboxFg3
+
+hi! link pythonException GruvboxRed
+hi! link pythonExceptions GruvboxPurple
+hi! link pythonExClass GruvboxYellow
+
+hi! link pythonClass GruvboxOrange
+hi! link pythonClassVar GruvboxBlueItalic
+
+hi! link pythonDefine GruvboxRed
+hi! link pythonImport GruvboxRed
+
+hi! link pythonFunction GruvboxAqua
+hi! link pythonFunctionCall GruvboxBlueBold
+hi! link pythonModule GruvboxBlue
+hi! link pythonDecorator GruvboxPurple
+hi! link pythonDottedName GruvboxYellow
+hi! link pythonKeyword GruvboxBlue
 
 " }}}
 " CSS: {{{
